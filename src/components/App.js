@@ -17,7 +17,9 @@ const App = () => {
   return (
     
     <div id="main">
-      <input id="input" value={text} onChange={(e)=>(setText(e.target.value))}></input><br/>
+      <div id="root">
+         <input id="input" value={text} onChange={(e)=>(setText(e.target.value))}></input>
+      </div>
       <PortalButton buttonclick={handleInput} /><br/>
       <PortalTextArea value={data}/>
     </div>
